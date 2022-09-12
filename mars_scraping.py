@@ -112,7 +112,7 @@ def scrape_hemispheres(browser):
     browser.visit(url)
 
     #create list to hold images and titles
-    hemisphere_image_ursl = []
+    hemisphere_image_urls = []
 
     #set up loop
     for i in range(4):
@@ -139,7 +139,7 @@ def scrape_hemispheres(browser):
         browser.back()
 
     #return hemisphere urls with titles
-    return hemisphere_image_ursl
+    return hemisphere_image_urls
 
 
 
@@ -148,12 +148,14 @@ def scrape_hemispheres(browser):
 
 
 #scrape_all()
+#scrape_news()
+
 
 
 
 
 #set as a flask app
-if __name__ =="main":
+if __name__ =="__main__":
     print(scrape_all())
 
 
