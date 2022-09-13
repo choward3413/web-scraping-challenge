@@ -11,7 +11,8 @@ mongo = PyMongo(app)
 def index():    
     #sccess info from db
     mars_data = mongo.db.marsData.find_one()
-    print(mars_data)
+    #print(mars_data)
+    #return "Flask app loaded"
     return render_template("index.html", mars=mars_data)
 
 @app.route("/scrape")
@@ -34,5 +35,5 @@ def scrape():
     return redirect("/")
   
 
-if __name__ =="__main__":
+if __name__ == "__main__":
     app.run()

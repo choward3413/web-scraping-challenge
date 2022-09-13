@@ -22,7 +22,7 @@ def scrape_all():
         "newsParagraph": news_paragraph,
         "featuredImage": scrape_feature_img(browser),
         "facts": scrape_facts_page(browser),
-        "hemisphere": scrape_hemispheres(browser),
+        "hemispheres": scrape_hemispheres(browser),
         "latUpdated": dt.datetime.now()
     }
 
